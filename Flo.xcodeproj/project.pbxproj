@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA3BF2031BD744FB00749459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF2021BD744FB00749459 /* AppDelegate.swift */; };
+		EA3BF2051BD744FB00749459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF2041BD744FB00749459 /* ViewController.swift */; };
+		EA3BF2081BD744FB00749459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3BF2061BD744FB00749459 /* Main.storyboard */; };
+		EA3BF20A1BD744FB00749459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3BF2091BD744FB00749459 /* Assets.xcassets */; };
+		EA3BF20D1BD744FB00749459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3BF20B1BD744FB00749459 /* LaunchScreen.storyboard */; };
+		EA3BF2181BD744FB00749459 /* FloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF2171BD744FB00749459 /* FloTests.swift */; };
+		EA3BF2231BD744FB00749459 /* FloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BF2221BD744FB00749459 /* FloUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA3BF2141BD744FB00749459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3BF1F71BD744FB00749459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3BF1FE1BD744FB00749459;
+			remoteInfo = Flo;
+		};
+		EA3BF21F1BD744FB00749459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA3BF1F71BD744FB00749459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA3BF1FE1BD744FB00749459;
+			remoteInfo = Flo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA3BF1FF1BD744FB00749459 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3BF2021BD744FB00749459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA3BF2041BD744FB00749459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA3BF2071BD744FB00749459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA3BF2091BD744FB00749459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA3BF20C1BD744FB00749459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA3BF20E1BD744FB00749459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3BF2131BD744FB00749459 /* FloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3BF2171BD744FB00749459 /* FloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloTests.swift; sourceTree = "<group>"; };
+		EA3BF2191BD744FB00749459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3BF21E1BD744FB00749459 /* FloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3BF2221BD744FB00749459 /* FloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloUITests.swift; sourceTree = "<group>"; };
+		EA3BF2241BD744FB00749459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA3BF1FC1BD744FB00749459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF2101BD744FB00749459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF21B1BD744FB00749459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA3BF1F61BD744FB00749459 = {
+			isa = PBXGroup;
+			children = (
+				EA3BF2011BD744FB00749459 /* Flo */,
+				EA3BF2161BD744FB00749459 /* FloTests */,
+				EA3BF2211BD744FB00749459 /* FloUITests */,
+				EA3BF2001BD744FB00749459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA3BF2001BD744FB00749459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA3BF1FF1BD744FB00749459 /* Flo.app */,
+				EA3BF2131BD744FB00749459 /* FloTests.xctest */,
+				EA3BF21E1BD744FB00749459 /* FloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA3BF2011BD744FB00749459 /* Flo */ = {
+			isa = PBXGroup;
+			children = (
+				EA3BF2021BD744FB00749459 /* AppDelegate.swift */,
+				EA3BF2041BD744FB00749459 /* ViewController.swift */,
+				EA3BF2061BD744FB00749459 /* Main.storyboard */,
+				EA3BF2091BD744FB00749459 /* Assets.xcassets */,
+				EA3BF20B1BD744FB00749459 /* LaunchScreen.storyboard */,
+				EA3BF20E1BD744FB00749459 /* Info.plist */,
+			);
+			path = Flo;
+			sourceTree = "<group>";
+		};
+		EA3BF2161BD744FB00749459 /* FloTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA3BF2171BD744FB00749459 /* FloTests.swift */,
+				EA3BF2191BD744FB00749459 /* Info.plist */,
+			);
+			path = FloTests;
+			sourceTree = "<group>";
+		};
+		EA3BF2211BD744FB00749459 /* FloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA3BF2221BD744FB00749459 /* FloUITests.swift */,
+				EA3BF2241BD744FB00749459 /* Info.plist */,
+			);
+			path = FloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA3BF1FE1BD744FB00749459 /* Flo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3BF2271BD744FB00749459 /* Build configuration list for PBXNativeTarget "Flo" */;
+			buildPhases = (
+				EA3BF1FB1BD744FB00749459 /* Sources */,
+				EA3BF1FC1BD744FB00749459 /* Frameworks */,
+				EA3BF1FD1BD744FB00749459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flo;
+			productName = Flo;
+			productReference = EA3BF1FF1BD744FB00749459 /* Flo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA3BF2121BD744FB00749459 /* FloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3BF22A1BD744FB00749459 /* Build configuration list for PBXNativeTarget "FloTests" */;
+			buildPhases = (
+				EA3BF20F1BD744FB00749459 /* Sources */,
+				EA3BF2101BD744FB00749459 /* Frameworks */,
+				EA3BF2111BD744FB00749459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA3BF2151BD744FB00749459 /* PBXTargetDependency */,
+			);
+			name = FloTests;
+			productName = FloTests;
+			productReference = EA3BF2131BD744FB00749459 /* FloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA3BF21D1BD744FB00749459 /* FloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3BF22D1BD744FB00749459 /* Build configuration list for PBXNativeTarget "FloUITests" */;
+			buildPhases = (
+				EA3BF21A1BD744FB00749459 /* Sources */,
+				EA3BF21B1BD744FB00749459 /* Frameworks */,
+				EA3BF21C1BD744FB00749459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA3BF2201BD744FB00749459 /* PBXTargetDependency */,
+			);
+			name = FloUITests;
+			productName = FloUITests;
+			productReference = EA3BF21E1BD744FB00749459 /* FloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA3BF1F71BD744FB00749459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = DPC;
+				TargetAttributes = {
+					EA3BF1FE1BD744FB00749459 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = TU86998N4Q;
+					};
+					EA3BF2121BD744FB00749459 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = TU86998N4Q;
+						TestTargetID = EA3BF1FE1BD744FB00749459;
+					};
+					EA3BF21D1BD744FB00749459 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = TU86998N4Q;
+						TestTargetID = EA3BF1FE1BD744FB00749459;
+					};
+				};
+			};
+			buildConfigurationList = EA3BF1FA1BD744FB00749459 /* Build configuration list for PBXProject "Flo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA3BF1F61BD744FB00749459;
+			productRefGroup = EA3BF2001BD744FB00749459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA3BF1FE1BD744FB00749459 /* Flo */,
+				EA3BF2121BD744FB00749459 /* FloTests */,
+				EA3BF21D1BD744FB00749459 /* FloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA3BF1FD1BD744FB00749459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3BF20D1BD744FB00749459 /* LaunchScreen.storyboard in Resources */,
+				EA3BF20A1BD744FB00749459 /* Assets.xcassets in Resources */,
+				EA3BF2081BD744FB00749459 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF2111BD744FB00749459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF21C1BD744FB00749459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA3BF1FB1BD744FB00749459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3BF2051BD744FB00749459 /* ViewController.swift in Sources */,
+				EA3BF2031BD744FB00749459 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF20F1BD744FB00749459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3BF2181BD744FB00749459 /* FloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA3BF21A1BD744FB00749459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3BF2231BD744FB00749459 /* FloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA3BF2151BD744FB00749459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3BF1FE1BD744FB00749459 /* Flo */;
+			targetProxy = EA3BF2141BD744FB00749459 /* PBXContainerItemProxy */;
+		};
+		EA3BF2201BD744FB00749459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA3BF1FE1BD744FB00749459 /* Flo */;
+			targetProxy = EA3BF21F1BD744FB00749459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA3BF2061BD744FB00749459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3BF2071BD744FB00749459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA3BF20B1BD744FB00749459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA3BF20C1BD744FB00749459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA3BF2251BD744FB00749459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EA3BF2261BD744FB00749459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA3BF2281BD744FB00749459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Flo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.Flo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA3BF2291BD744FB00749459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Flo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.Flo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA3BF22B1BD744FB00749459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.FloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flo.app/Flo";
+			};
+			name = Debug;
+		};
+		EA3BF22C1BD744FB00749459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.FloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flo.app/Flo";
+			};
+			name = Release;
+		};
+		EA3BF22E1BD744FB00749459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.FloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EA3BF22F1BD744FB00749459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DPC.FloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA3BF1FA1BD744FB00749459 /* Build configuration list for PBXProject "Flo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3BF2251BD744FB00749459 /* Debug */,
+				EA3BF2261BD744FB00749459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA3BF2271BD744FB00749459 /* Build configuration list for PBXNativeTarget "Flo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3BF2281BD744FB00749459 /* Debug */,
+				EA3BF2291BD744FB00749459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA3BF22A1BD744FB00749459 /* Build configuration list for PBXNativeTarget "FloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3BF22B1BD744FB00749459 /* Debug */,
+				EA3BF22C1BD744FB00749459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA3BF22D1BD744FB00749459 /* Build configuration list for PBXNativeTarget "FloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3BF22E1BD744FB00749459 /* Debug */,
+				EA3BF22F1BD744FB00749459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA3BF1F71BD744FB00749459 /* Project object */;
+}
