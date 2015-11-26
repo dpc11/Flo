@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmv-b3-2Q1" customClass="PushButton" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <rect key="frame" x="250" y="350" width="100" height="100"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="R4l-mN-Iux"/>
@@ -29,6 +29,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNp-D3-n1m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRC-GT-7xl" customClass="PushButton" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="275" y="480" width="50" height="50"/>
@@ -43,17 +46,54 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQT-oR-O6U"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Oo-U3-1VZ" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                <rect key="frame" x="185" y="70" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-pz-S2V">
+                                        <rect key="frame" x="104" y="94" width="22" height="43"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="F1h-96-2Cc"/>
+                                    <constraint firstItem="F5f-pz-S2V" firstAttribute="centerX" secondItem="1Oo-U3-1VZ" secondAttribute="centerX" id="efa-d1-wsB"/>
+                                    <constraint firstItem="F5f-pz-S2V" firstAttribute="centerY" secondItem="1Oo-U3-1VZ" secondAttribute="centerY" id="kPj-5U-GJF"/>
+                                    <constraint firstAttribute="height" constant="230" id="nAe-xi-abV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Fmv-b3-2Q1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4mP-Dj-m9H"/>
                             <constraint firstItem="Fmv-b3-2Q1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fmk-5V-QWa"/>
+                            <constraint firstItem="1Oo-U3-1VZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O02-H4-o7P"/>
+                            <constraint firstItem="1Oo-U3-1VZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="OtK-3Y-x4W"/>
+                            <constraint firstItem="BRC-GT-7xl" firstAttribute="top" secondItem="Fmv-b3-2Q1" secondAttribute="bottom" constant="30" id="aO7-Dv-Fpn"/>
+                            <constraint firstItem="Fmv-b3-2Q1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="330" id="an2-ST-ICo"/>
                             <constraint firstItem="BRC-GT-7xl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="muC-tK-fDK"/>
-                            <constraint firstItem="BRC-GT-7xl" firstAttribute="top" secondItem="Fmv-b3-2Q1" secondAttribute="bottom" constant="130" id="nUI-RA-jyX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="F5f-pz-S2V" id="K3V-O4-LSn"/>
+                        <outlet property="counterView" destination="1Oo-U3-1VZ" id="c13-1Y-kVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
