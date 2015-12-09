@@ -12,6 +12,13 @@ import UIKit
     @IBInspectable var fillColor: UIColor = UIColor.greenColor()
     @IBInspectable var isAddButton: Bool = true
     
+    override var highlighted:Bool {
+        didSet {
+            super.highlighted = highlighted
+            setNeedsDisplay()
+        }
+    }
+    
     override func drawRect(rect: CGRect) {
         let path = UIBezierPath(ovalInRect: rect)
         fillColor.setFill()
@@ -42,5 +49,15 @@ import UIKit
         
         UIColor.whiteColor().setStroke()
         plusPath.stroke();
+        
+        if self.state == .Highlighted {
+            let startColor = UIColor.clearColor()
+            let endColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
+            let colors = [startColor.CGColor, endColor.CGColor]
+            let gradient = CGGradientCreateWithColors(CGColorSpaceCreateDeviceRGB(), colors, [0, 1])
+            
+            let center = CGPoint(x: CGRectGetMidX(rect), y: CGRectGetMidY(rect))
+            CGContextDrawRadialGradient(UIGraphicsGetCurrentContext(), gradient, center, 0, center, bounds.width/2, [])
+        }
     }
 }

@@ -15,14 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var averageLabel: UILabel!
     @IBOutlet weak var maxLabel: UILabel!
+    @IBOutlet weak var medalView: MedalView!
     
     var isGraphViewShowing = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         counterLabel.text = String(counterView.counter)
         graphView.hidden = true;
+        checkTotal()
     }
     
     @IBAction func buttonPushed(button: PushButton) {
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
         if isGraphViewShowing {
             counterViewTap(nil)
         }
+        checkTotal()
     }
     
     @IBAction func counterViewTap(sender: UITapGestureRecognizer?) {
@@ -72,6 +75,14 @@ class ViewController: UIViewController {
                 }
                 dayLabel.text = days[--weekday]
             }
+        }
+    }
+    
+    func checkTotal() {
+        if counterView.counter >= 8 {
+            medalView.hidden = false
+        } else {
+            medalView.hidden = true
         }
     }
 }
